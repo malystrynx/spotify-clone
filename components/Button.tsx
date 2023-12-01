@@ -27,7 +27,14 @@ const Button = forwardRef <HTMLButtonElement, ButtonProps>(({
         text-black
         font-bold
         hover:opacity-75
-        transition`)}>
+        transition`,
+        className
+        
+        )}
+        disabled={disabled}
+        ref={ref}
+        {...props}
+        >
         {children}
         </button>
     )
